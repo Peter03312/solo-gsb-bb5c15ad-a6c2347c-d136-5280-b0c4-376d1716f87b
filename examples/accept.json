@@ -1,0 +1,37 @@
+{
+  "observation_date": "2026-10-06",
+  "timezone": "America/Santiago",
+  "site": {
+    "latitude_deg": -30.2407,
+    "longitude_deg": -70.7366,
+    "min_altitude_deg": 30.0
+  },
+  "schedule_start": "2026-10-06T20:00:00",
+  "targets": [
+    {
+      "name": "NGC253",
+      "ra_deg": 11.8875,
+      "dec_deg": -25.2889,
+      "exposures": [
+        {"filter": "g", "exposure_sec": 300, "count": 3},
+        {"filter": "r", "exposure_sec": 300, "count": 2},
+        {"filter": "i", "exposure_sec": 300, "count": 2}
+      ]
+    },
+    {
+      "name": "47Tuc",
+      "ra_deg": 6.0236,
+      "dec_deg": -72.0813,
+      "exposures": [
+        {"filter": "r", "exposure_sec": 180, "count": 2},
+        {"filter": "i", "exposure_sec": 180, "count": 2}
+      ]
+    }
+  ],
+  "telescope": {
+    "supported_filters": ["u", "g", "r", "i", "z"],
+    "filter_switch_sec": 90,
+    "min_readout_sec": 15,
+    "slew_sec": 120
+  }
+}

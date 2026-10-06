@@ -1,0 +1,5 @@
+# The service runs on the Python 3.11+ standard library only; no third-party
+# runtime dependencies are required.
+# tzdata is installed as a fallback IANA timezone database for minimal base
+# images that ship without /usr/share/zoneinfo.
+tzdata>=2024.1

@@ -1,0 +1,12 @@
+services:
+  scheduler-audit:
+    build: .
+    image: obs-scheduler-audit:latest
+    container_name: obs-scheduler-audit
+    ports:
+      - "8000:8000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8000"
+      LOG_LEVEL: INFO
+    restart: unless-stopped
