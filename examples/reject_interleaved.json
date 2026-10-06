@@ -1,0 +1,26 @@
+{
+  "observation_date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "site": {
+    "name": "兴隆观测站",
+    "latitude": 40.3933,
+    "longitude": 117.5786,
+    "elevation_m": 900.0
+  },
+  "targets": [
+    {"name": "A", "ra": "00:42:44.3", "dec": "+41:16:09"},
+    {"name": "B", "ra": "22:30:00", "dec": "+30:00:00"}
+  ],
+  "sequence": [
+    {"target": "A", "filter": "V", "exposure_seconds": 60.0, "repeats": 1},
+    {"target": "B", "filter": "V", "exposure_seconds": 60.0, "repeats": 1},
+    {"target": "A", "filter": "R", "exposure_seconds": 60.0, "repeats": 1}
+  ],
+  "telescope": {
+    "name": "测试相机",
+    "filters": ["V", "R"],
+    "min_readout_seconds": 10.0,
+    "filter_change": {"V->R": 25.0, "R->V": 25.0}
+  },
+  "min_altitude_deg": 20.0
+}

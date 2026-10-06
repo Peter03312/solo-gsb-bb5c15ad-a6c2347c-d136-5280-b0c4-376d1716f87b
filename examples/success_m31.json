@@ -1,0 +1,33 @@
+{
+  "observation_date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "site": {
+    "name": "兴隆观测站",
+    "latitude": 40.3933,
+    "longitude": 117.5786,
+    "elevation_m": 900.0
+  },
+  "target": {
+    "name": "M31",
+    "ra": "00:42:44.3",
+    "dec": "+41:16:09"
+  },
+  "sequence": [
+    {"filter": "V", "exposure_seconds": 120.0, "repeats": 3},
+    {"filter": "R", "exposure_seconds": 60.0, "repeats": 2}
+  ],
+  "telescope": {
+    "name": "测试相机",
+    "filters": ["V", "R", "B"],
+    "min_readout_seconds": 10.0,
+    "min_exposure_seconds": 0.1,
+    "max_exposure_seconds": 600.0,
+    "filter_change": {
+      "V->R": 25.0, "R->V": 25.0,
+      "V->B": 30.0, "B->V": 30.0,
+      "R->B": 30.0, "B->R": 30.0
+    }
+  },
+  "min_altitude_deg": 20.0,
+  "twilight": "astronomical"
+}

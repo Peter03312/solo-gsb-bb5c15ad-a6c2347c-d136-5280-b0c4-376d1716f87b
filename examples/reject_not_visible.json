@@ -1,0 +1,26 @@
+{
+  "observation_date": "2026-04-20",
+  "timezone": "Asia/Shanghai",
+  "site": {
+    "name": "兴隆观测站",
+    "latitude": 40.3933,
+    "longitude": 117.5786,
+    "elevation_m": 900.0
+  },
+  "target": {
+    "name": "DAY_SKY_TARGET",
+    "ra": "06:00:00",
+    "dec": "-50:00:00"
+  },
+  "sequence": [
+    {"filter": "V", "exposure_seconds": 60.0, "repeats": 1}
+  ],
+  "telescope": {
+    "name": "测试相机",
+    "filters": ["V", "R"],
+    "min_readout_seconds": 10.0,
+    "filter_change": 30.0
+  },
+  "min_altitude_deg": 30.0,
+  "twilight": "astronomical"
+}

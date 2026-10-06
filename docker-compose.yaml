@@ -1,0 +1,20 @@
+services:
+  obs-audit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: night-schedule-audit:1.0.0
+    container_name: obs-audit
+    ports:
+      # 宿主机 8080 -> 容器 8080；如被占用可改，例如 "18080:8080"
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      TZ: UTC
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/healthz"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
